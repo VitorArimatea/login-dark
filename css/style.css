@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'poppins', arial;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(22, 12, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    color: rgb(0, 104, 189);
+    font-size: 3vw;
+}
+
+.left-login-img {
+    width: 35vw;
+}
+
+.right-login {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background:rgb(48, 36, 61);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(20, 20, 20, 0.295);
+}
+
+.card-login > h1 {
+    color: rgb(0, 104, 189);
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(84, 57, 110);
+    color: white;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px rgba(20, 20, 20, 0.295);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.textfield > inpute::placeholder {
+    color: rgb(253, 249, 249);
+}
+
+.btn-login {
+    width: 100%;
+    padding: 10px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color:rgb(255, 255, 255);
+    background: #2600ff;
+    cursor: pointer;
+    box-shadow:  0px 10px 40px -12px #0011ffbd;
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .main-login{
+        flex-direction: column;
+    }
+   
+    .left-login > h1{
+        display: none;
+    }
+   
+    .left-login{
+        height: auto;
+        width: 100%;
+    }
+   
+    .right-login{
+        height: auto;
+        width: 100%;
+    }
+
+    .left-login-img {
+        width: 50vw;
+    }
+    
+    .card-login {
+        width: 90%;
+    }
+}
+
+
